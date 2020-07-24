@@ -27,3 +27,6 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/bulletin-board-app/Dockerfile'
         tags: |
           $(tag)
+- stage: Test
+  displayName: Test stage
+  jobs:
