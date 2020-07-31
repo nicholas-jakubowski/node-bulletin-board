@@ -27,8 +27,8 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/bulletin-board-app/Dockerfile'
         tags: |
           $(tag)
-    - task: Docker@2
+    - task: CmdLine@2
       displayName: Run an image
       inputs:
-        command: run
-        arguments: $(tag)
+        script: script/build-and-run
+        workingDirectory: ./
