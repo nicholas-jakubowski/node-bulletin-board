@@ -28,7 +28,7 @@ stages:
         tags: |
           $(tag)
     - task: CmdLine@2
-      displayName: Run an image
+      displayName: Build and run an image
       inputs:
-        script: script/build-and-run
+        script: scripts/build-and-run
         workingDirectory: ./
