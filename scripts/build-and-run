@@ -5,7 +5,7 @@ echo "building image"
 docker build -t test-app ./bulletin-board-app/.
 
 echo "running container"
-docker run test-app
+docker run -d test-app
 
 echo "wait to make sure the container doesn't crash instantly"
 sleep 30
