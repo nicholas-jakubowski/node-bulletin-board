@@ -2,7 +2,7 @@
 
 echo "building image"
 
-docker build -t test-app ../bulletin-board-app/.
+docker build -t test-app ./../bulletin-board-app/.
 
 echo "running container"
 docker run test-app
