@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "building image"
 
 docker build -t test-app ../bulletin-board-app/.
