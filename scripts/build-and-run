@@ -5,10 +5,10 @@ echo "building image"
 docker build -t test-app ./bulletin-board-app/.
 
 echo "running container"
-docker run -d test-app
+instance_id=$(docker run -d test-app)
 
 echo "wait to make sure the container doesn't crash instantly"
 sleep 30
 
 echo "stopping container"
-docker stop test-app
+docker stop $instance_id
