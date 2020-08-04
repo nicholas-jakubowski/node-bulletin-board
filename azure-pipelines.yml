@@ -34,5 +34,5 @@ stages:
         workingDirectory: ./
     - task: PublishBuildArtifacts@1
       inputs:
-        pathToPublish: './Dockerfile'
+        pathToPublish: 'Dockerfile'
         artifactName: testArtifactDockerfile
