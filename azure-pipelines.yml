@@ -32,3 +32,7 @@ stages:
       inputs:
         script: scripts/build-and-run
         workingDirectory: ./
+    - task: PublishBuildArtifacts@1
+      inputs:
+        pathToPublish: './Dockerfile'
+        artifactName: testArtifactDockerfile
