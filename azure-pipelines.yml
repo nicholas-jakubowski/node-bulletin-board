@@ -34,5 +34,5 @@ stages:
         workingDirectory: ./
     - task: PublishBuildArtifacts@1
       inputs:
-        pathToPublish: 'Dockerfile'
+        TargetPath: $(System.DefaultWorkingDirectory)/bin/node-bulletin-board/bulletin-board-app/Dockerfile
         artifactName: testArtifactDockerfile
